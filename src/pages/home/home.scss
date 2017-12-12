@@ -1,3 +1,20 @@
 page-home {
+    .user-stuff {
+        margin-top: 50px;
+    }
 
+    .user-stuff .username {
+        font-size: 18px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .user-stuff input {
+        text-align: center;
+    }
+
+    .user-stuff button {
+        font-size: 18px;
+        height: 40px;
+    }
 }

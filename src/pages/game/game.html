@@ -1,0 +1,63 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Connect Four</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="game-info">
+        <p>Player 1: {{this.player1}} (Red)</p>
+        <p>Player 2: {{this.player2}} (Yellow)</p>
+    </div>
+
+    <div class="board">
+        <ion-grid>
+            <ion-row *ngFor="let row of board">
+                <ion-col class="board-col" *ngFor="let col of row">
+                    <img width="35px" height="35px" src="{{col}}">
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col class="button-col">
+                    <button ion-button icon-only (click)="sendMove(0)">
+                        <ion-icon name="add"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col class="button-col">
+                    <button ion-button icon-only (click)="sendMove(1)">
+                        <ion-icon name="add"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col class="button-col">
+                    <button ion-button icon-only (click)="sendMove(2)">
+                        <ion-icon name="add"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col class="button-col">
+                    <button ion-button icon-only (click)="sendMove(3)">
+                        <ion-icon name="add"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col class="button-col">
+                    <button ion-button icon-only (click)="sendMove(4)">
+                        <ion-icon name="add"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col class="button-col">
+                    <button ion-button icon-only (click)="sendMove(5)">
+                        <ion-icon name="add"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col class="button-col">
+                    <button ion-button icon-only (click)="sendMove(6)">
+                        <ion-icon name="add"></ion-icon>
+                    </button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+</ion-content>
